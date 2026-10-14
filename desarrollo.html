@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desarrollo | Proyecto técnico 11.B</title>
+  <meta name="description" content="Proceso de trabajo, herramientas, decisiones técnicas y dificultades del proyecto técnico del curso 11.B de la Institución Educativa Colombia.">
+  <meta name="author" content="Curso 11.B, Institución Educativa Colombia">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="salto-contenido" href="#contenido">Ir al contenido principal</a>
+  <header class="barra">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg p-0" aria-label="Navegación principal del sitio">
+        <a class="barra__marca" href="index.html">
+          <img class="barra__escudo" src="img/logo.png" alt="" width="36" height="36" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+          <span class="avatar" hidden aria-hidden="true">IE</span>
+          <span class="marca-bloque">
+            <span class="marca__nombre">Institución Educativa Colombia</span>
+            <span class="marca__pie">Proyecto técnico &middot; 11.B</span>
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar el menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyecto.html">El proyecto</a></li>
+            <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+            <li class="nav-item"><a class="nav-link active" href="desarrollo.html" aria-current="page">Desarrollo</a></li>
+            <li class="nav-item"><a class="nav-link" href="evidencias.html">Evidencias</a></li>
+            <li class="nav-item"><a class="nav-link" href="conclusiones.html">Conclusiones</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="portada">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-end">
+          <div class="col-12 col-lg-8">
+            <p class="rotulo mb-0">Sección 03</p>
+            <h1 class="titulo-portada">Desarrollo</h1>
+            <hr class="regla">
+            <p class="entradilla mb-0">Cómo se construyó este sitio, con qué herramientas y qué decisiones técnicas se tomaron durante el proceso.</p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <figure class="fotografia">
+              <img src="img/doc-01-potrero.jpg" width="1200" height="900" loading="lazy"
+                   alt="Extensión de pasto verde rodeada de árboles de gran tamaño en el predio, con un animal a lo lejos.">
+              <figcaption>Potrero del predio, uno de los puntos observados durante el trabajo técnico.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="t-proceso">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <span class="numero-seccion">01</span>
+            <h2 class="titulo-seccion" id="t-proceso">Proceso de trabajo</h2>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p class="parrafo-medida">La construcción de este sitio está documentada de principio a fin, porque el proyecto conserva todos los archivos y cada decisión pudo comprobarse sobre ellos. La secuencia real fue la siguiente.</p>
+            <ol class="linea-tiempo">
+              <li>
+                <span class="etapa">Etapa 01</span>
+                <h3>Revisión de los archivos existentes</h3>
+                <p class="mb-0">Se inspeccionó la carpeta del proyecto: una plantilla HTML de Bootstrap con textos de relleno, la distribución completa de Bootstrap 5.3.2 y siete imágenes de distintos orígenes.</p>
+              </li>
+              <li>
+                <span class="etapa">Etapa 02</span>
+                <h3>Clasificación del material visual</h3>
+                <p class="mb-0">Cada imagen se abrió y se revisó antes de decidir su uso. Cuatro resultaron ser documentación del predio; las otras tres resultaron ser material de Internet sin relación con el trabajo.</p>
+              </li>
+              <li>
+                <span class="etapa">Etapa 03</span>
+                <h3>Preparación de los recursos</h3>
+                <p class="mb-0">Se generaron copias ligeras de las cuatro fotografías de campo, con nombres sin espacios y dimensiones ajustadas para móvil, conservando intactos los archivos originales.</p>
+              </li>
+              <li>
+                <span class="etapa">Etapa 04</span>
+                <h3>Definición de la identidad visual</h3>
+                <p class="mb-0">Se establecieron la paleta, la escala tipográfica y el sistema de composición del sitio en un único archivo de estilos propio, por encima de Bootstrap.</p>
+              </li>
+              <li>
+                <span class="etapa">Etapa 05</span>
+                <h3>Construcción de las páginas</h3>
+                <p class="mb-0">Se redactaron las seis páginas con el mismo encabezado y el mismo pie, de modo que la navegación y la identidad sean idénticas en todo el sitio.</p>
+              </li>
+              <li>
+                <span class="etapa">Etapa 06</span>
+                <h3>Revisión y pruebas</h3>
+                <p class="mb-0">Se comprobaron rutas, enlaces, textos alternativos, comportamiento en pantallas pequeñas y ausencia de errores en el navegador.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--papel" aria-labelledby="t-herramientas">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <span class="numero-seccion">02</span>
+            <h2 class="titulo-seccion" id="t-herramientas">Herramientas utilizadas</h2>
+            <p class="parrafo-medida">Todas las herramientas están instaladas en el equipo y no requieren conexión a internet.</p>
+          </div>
+          <div class="col-12 col-lg-8">
+            <dl class="ficha">
+              <div><dt>Estructura</dt><dd>HTML5 con etiquetas semánticas</dd></div>
+              <div><dt>Presentación</dt><dd>CSS3 en un archivo propio del proyecto</dd></div>
+              <div><dt>Componentes</dt><dd>Bootstrap 5.3.2, versión local</dd></div>
+              <div><dt>Interactividad</dt><dd>JavaScript de Bootstrap 5.3.2 para el menú y la galería</dd></div>
+              <div><dt>Edición</dt><dd>Visual Studio Code</dd></div>
+              <div><dt>Vista previa</dt><dd>Live Server, puerto 5501</dd></div>
+              <div><dt>Imágenes</dt><dd>Redimensionado y compresión de las fotografías de campo</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="t-decisiones">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <span class="numero-seccion">03</span>
+            <h2 class="titulo-seccion" id="t-decisiones">Decisiones técnicas</h2>
+          </div>
+          <div class="col-12 col-lg-8">
+            <ul class="parrafo-medida">
+              <li class="mb-3"><strong>Sitio estático y multipágina.</strong> Seis documentos HTML independientes en lugar de una sola aplicación. Se abre con doble clic, sin servidor ni compilación.</li>
+              <li class="mb-3"><strong>Una sola versión de Bootstrap.</strong> La carpeta traía la distribución completa, con variantes de lectura de derecha a izquierda, de rejilla, de reinicio y de utilidades. Cargar todas duplicaba los estilos; se usan únicamente la versión completa mínima y su paquete de JavaScript.</li>
+              <li class="mb-3"><strong>Estilos propios en un solo archivo.</strong> Bootstrap aporta el sistema de rejilla y los componentes; la identidad visual del sitio vive en un archivo CSS separado, sin estilos repetidos dentro de las páginas.</li>
+              <li class="mb-3"><strong>Sin recursos externos.</strong> No hay fuentes remotas, iconos descargados ni servicios de terceros. Todo funciona sin conexión.</li>
+              <li class="mb-0"><strong>Imágenes sin recortes.</strong> Las fotografías conservan su proporción original y el alto se calcula a partir del ancho, de modo que ninguna aparece deformada ni cortada.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--papel" aria-labelledby="t-dificultades">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <span class="numero-seccion">04</span>
+            <h2 class="titulo-seccion" id="t-dificultades">Dificultades y soluciones</h2>
+          </div>
+          <div class="col-12 col-lg-8">
+            <dl class="ficha">
+              <div><dt>Material de relleno</dt><dd>La plantilla inicial usaba textos de ejemplo y enlaces vacíos. Se reescribió todo el contenido y cada enlace apunta a una página real.</dd></div>
+              <div><dt>Nombres de archivo</dt><dd>Tres fotografías tenían nombres con espacios y comillas, lo que complicaba las rutas. Se crearon copias con nombres cortos, sin tocar los originales.</dd></div>
+              <div><dt>Peso de las imágenes</dt><dd>Una fotografía pesaba casi cinco megabytes. Se excluyó del diseño y el resto se ajustó a un tamaño adecuado para móvil.</dd></div>
+              <div><dt>Imágenes ajenas al proyecto</dt><dd>Dos de los archivos eran material de Internet sin relación con el trabajo. Se conservaron en la carpeta, pero no se usan en ninguna página.</dd></div>
+              <div><dt>Escudo institucional</dt><dd>No había un archivo de escudo real. El pie reserva su espacio y muestra una marca tipográfica de reserva mientras se incorpora el recurso auténtico.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="t-etapas-proyecto">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <span class="numero-seccion">05</span>
+            <h2 class="titulo-seccion" id="t-etapas-proyecto">Etapas del proyecto técnico</h2>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p class="parrafo-medida">La línea de tiempo anterior documenta la construcción de este sitio, que sí está registrada. Las etapas del proyecto técnico en sí necesitan otra línea de tiempo, construida a partir de las anotaciones del equipo.</p>
+            <div class="provisional">
+              <span class="provisional__etiqueta">Texto provisional</span>
+              <p>No se ha incluido una secuencia de etapas del proyecto porque no existe un registro escrito que la respalde. El equipo debe relacionar cada etapa con su fecha aproximada y con la evidencia fotográfica que la acompaña.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--verde" aria-labelledby="t-estado-dev">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-start">
+          <div class="col-12 col-lg-7">
+            <span class="numero-seccion">06</span>
+            <h2 class="titulo-seccion" id="t-estado-dev">Estado actual</h2>
+            <p class="parrafo-medida mb-0">El sitio está terminado y navegable: las seis páginas cargan sin errores, los enlaces internos funcionan, el menú se despliega correctamente en pantallas pequeñas y las imágenes se muestran con su proporción original. Lo que falta es la redacción académica del proyecto, que depende del equipo y de la tutoría.</p>
+          </div>
+          <div class="col-12 col-lg-5">
+            <p class="parrafo-medida mb-0"><a href="evidencias.html">Ver el registro fotográfico</a> &nbsp;&middot;&nbsp; <a href="conclusiones.html">Ver conclusiones</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <footer class="pie">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-lg-4">
+          <p class="pie__titulo">Institución</p>
+          <p class="pie__marca">
+            <img class="pie__escudo" src="img/logo.png" alt="Escudo de la Institución Educativa Colombia" width="48" height="48" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+            <span class="avatar" hidden aria-hidden="true">IE</span>
+          </p>
+          <p class="pie__institucion">Institución Educativa Colombia</p>
+          <p class="mb-0">Curso 11.B &middot; Modalidad técnica</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <p class="pie__titulo">Equipo del proyecto</p>
+          <ul class="pie__integrantes">
+            <li>Jhon Fredy Montalvo Cuadrado</li>
+            <li>José David Mosquera Rodríguez</li>
+            <li>Esteban Espinoza Gomez</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <p class="pie__titulo">Ficha del sitio</p>
+          <dl class="pie__ficha">
+            <dt>Aula</dt><dd>Sitio web estático</dd>
+            <dt>Curso</dt><dd>11.B</dd>
+            <dt>Páginas</dt><dd>6 documentos HTML</dd>
+            <dt>Elaborado</dt><dd>2026</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="pie__legal">Sitio elaborado en 2026 por el equipo del curso 11.B. Los bloques señalados como texto provisional deben ser validados por el equipo antes de la entrega formal.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
