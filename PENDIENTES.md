@@ -1,7 +1,8 @@
 # Pendientes y decisiones técnicas del sitio
 
 Proyecto técnico 11.B — Institución Educativa Colombia
-Equipo: Jhon Fredy Montalvo Cuadrado, José David Mosquera Rodríguez, Esteban Espinoza Gomez
+Equipo: Jhon Fredy Montalvo Cuadrado, José David Mosquera Rodríguez, Esteban Espinoza Gomez,
+Brandol Stevan Durango Moreno
 
 Este archivo no es contenido del sitio web. Es la bitácora interna del proyecto: registra
 qué datos no se pudieron verificar, qué decisiones se tomaron al reorganizar los archivos
