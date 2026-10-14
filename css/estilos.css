@@ -21,7 +21,7 @@
     Arial, sans-serif;
 
   --ancho: 1140px;
-  --alto-barra: 4.25rem;
+  --alto-barra: 4.75rem;
 }
 
 [hidden] {
@@ -95,9 +95,10 @@ p:last-child {
 .barra__marca {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  flex: 1 1 auto;
+  gap: 0.75rem;
+  flex: 0 1 auto;
   min-width: 0;
+  padding: 0.4rem 0;
   text-decoration: none;
   color: var(--tinta);
 }
@@ -108,29 +109,31 @@ p:last-child {
 
 .barra__escudo {
   flex: 0 0 auto;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 3rem;
+  height: 1.72rem;
   object-fit: contain;
 }
 
 .marca-bloque {
   display: block;
+  min-width: 0;
 }
 
 .marca__nombre {
   display: block;
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: clamp(0.92rem, 1.7vw, 1.05rem);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
 .marca__pie {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.66rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gris);
+  margin-top: 0.12rem;
 }
 
 .navbar-toggler {
@@ -147,16 +150,18 @@ p:last-child {
 }
 
 .navbar-nav .nav-link {
-  padding: 0.4rem 0.7rem;
+  padding: 0.45rem 0.7rem;
   color: var(--tinta);
   font-size: 0.9rem;
   letter-spacing: 0.02em;
   border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease,
+    background-color 0.15s ease;
 }
 
 .navbar-nav .nav-link:hover {
   color: var(--verde);
-  border-bottom-color: var(--linea);
+  background: var(--verde-tenue);
 }
 
 .navbar-nav .nav-link.active {
@@ -165,16 +170,28 @@ p:last-child {
   border-bottom-color: var(--ocre);
 }
 
-@media (min-width: 992px) {
-  .navbar-nav .nav-link {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-}
-
+/* Menú colapsado: móvil y tableta */
 @media (max-width: 991.98px) {
-  .barra__marca {
-    flex: 1 1 0%;
+  .navbar-collapse {
+    border-top: 1px solid var(--linea);
+    margin-top: 0.6rem;
+    padding-top: 0.3rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.7rem 0.25rem;
+    border-bottom: 0;
+    border-left: 3px solid transparent;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background: var(--verde-tenue);
+    border-left-color: var(--linea);
+  }
+
+  .navbar-nav .nav-link.active {
+    background: var(--verde-tenue);
+    border-left-color: var(--ocre);
   }
 }
 
@@ -184,7 +201,7 @@ p:last-child {
   }
 
   .marca__pie {
-    font-size: 0.66rem;
+    font-size: 0.62rem;
   }
 }
 
@@ -227,9 +244,17 @@ p:last-child {
 }
 
 .pie__escudo {
-  width: 3rem;
-  height: 3rem;
+  width: 4.2rem;
+  height: 2.4rem;
   object-fit: contain;
+}
+
+.pie__marca-nota {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8fa198;
+  margin: 0.55rem 0 0.9rem;
 }
 
 .pie .avatar {

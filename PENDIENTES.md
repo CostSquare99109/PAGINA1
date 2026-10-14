@@ -51,9 +51,14 @@ reemplazarlas por fotos del montaje, las conexiones y las pruebas de lectura en
 
 ### Cómo se marca el contenido pendiente
 
-Los bloques que faltan están marcados en el sitio con la clase `.provisional`, que aplica un
-borde ocre a la izquierda y la etiqueta visible **«Texto provisional»**. Para redactar la
-versión definitiva basta con sustituir el texto dentro del bloque:
+Los bloques que faltan siguen apareciendo marcados con la clase `.provisional`, que aplica un
+borde ocre a la izquierda y la etiqueta visible **«Texto provisional»**. Quedan ocho en total:
+uno en `index.html` (docente asesor), cinco en `proyecto.html` (componentes, pruebas,
+planteamiento, justificación y objetivos), uno en `desarrollo.html` (fechas de las etapas),
+uno en `evidencias.html` (fotos del montaje) y uno en `conclusiones.html` (aprendizajes).
+`integrantes.html` no tiene ninguno.
+
+Para redactar la versión definitiva basta con sustituir el texto dentro del bloque:
 
 ```html
 <div class="provisional">
@@ -67,27 +72,33 @@ Una vez redactado, se puede eliminar el contenedor completo o quitarle la clase
 
 ---
 
-## 3. `img/logo.png` (recurso pendiente por separado)
+## 3. `img/logo.png` y la marca del proyecto
 
-No existe ningún archivo de escudo institucional en la carpeta del proyecto y **no se creó
-uno ficticio**. Todas las páginas referencian la ruta pedida, `img/logo.png`, en el pie de
-página, con esta protección para que la página no se rompa mientras el recurso está pendiente:
+El equipo aportó una imagen de 580 × 412 px que se preparó y se colocó como `img/logo.png`:
+se le hizo transparente el fondo blanco, se recortó el margen y se redujo a 348 × 199 px
+(43 KB). Ya aparece en la barra y en el pie de las seis páginas, y funciona como favicon.
 
-```html
-<img class="pie__escudo" src="img/logo.png" alt="Escudo de la Institución Educativa Colombia"
-     width="48" height="48"
-     onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-<span class="avatar" hidden aria-hidden="true">IE</span>
-```
+**Decisión importante:** el texto alternativo no dice «escudo de la Institución Educativa
+Colombia», sino **«Logotipo del proyecto técnico del curso 11.B»**, y bajo la imagen hay una
+nota visible que dice «Logotipo del proyecto técnico». El archivo no es un escudo
+institucional, así que el sitio no lo presenta como tal: el nombre de la institución sigue
+escrito en texto aparte.
 
-Mientras el archivo no exista, el navegador muestra la marca tipográfica de reserva «IE».
-En cuanto se agregue el archivo real a `img/logo.png`, el escudo aparece automáticamente y
-no hay que modificar ninguna página. Basta con usar un PNG cuadrado; el CSS ya lo limita a
-48 × 48 píxeles con `object-fit: contain`.
+Si el equipo consigue después el escudo real de la institución, no hace falta tocar el
+código: bastaría con sustituir el archivo `img/logo.png` y actualizar los textos
+alternativos y la nota a «Escudo de la Institución Educativa Colombia».
 
 ---
 
 ## 4. Imágenes
+
+### Fotografía del equipo
+
+El equipo aportó una foto grupal (`img/integrantes.jpg`, 1600 × 1200 px), que se redujo a
+1200 × 900 px (110 KB). Muestra a los cuatro integrantes con el uniforme del colegio dentro
+de un aula, junto a computadores portátiles y un televisor en la pared. Se usa en la portada
+de `integrantes.html`, con texto alternativo descriptivo y pie de foto. No se identifica
+quién está en cada posición porque la imagen no permite verificarlo.
 
 ### Material usado (fotografías del predio)
 
@@ -149,3 +160,41 @@ Doble clic en `index.html`. No hace falta servidor, instalación ni conexión a 
 
 Si se quiere probar desde el celular en la misma red, en Visual Studio Code se puede usar la
 extensión **Live Server** (el proyecto ya tiene `.vscode/settings.json` con el puerto 5501).
+
+---
+
+## 8. Cambios en el encabezado, el menú y la portada (revisión de presentación)
+
+Se revisó el encabezado y la navegación de las seis páginas para que el sitio se presente
+como una página académica completa. Los cambios fueron acotados al `<header>`, al `navbar`
+y a la portada de `index.html`; no se tocó la lógica de contenido de las demás secciones.
+
+**Marca del encabezado.** La barra mostraba el nombre de la institución como título
+principal. Ahora muestra el nombre completo del proyecto, «Medidor de temperatura en Aulas de
+Clases», en dos líneas junto al logo, con el curso («11.B · Media Técnica de Sistemas») como
+segunda línea. El nombre de la institución sigue presente en la ficha de `index.html`,
+`proyecto.html`, `integrantes.html` y en el pie de las seis páginas. El logo pasó de 42 px a
+48 px de ancho para que no compita en tamaño con el texto.
+
+**Estados del menú.** En pantallas anchas los enlaces habían perdido el subrayado de estado:
+solo el enlace activo se distinguía. Ahora todos los enlaces reservan el mismo espacio de
+subrayado, el activo se marca con la línea ocre y el hover con un fondo verde tenue. En
+móvil y tableta el menú desplegable separa cada enlace con un borde ocre a la izquierda en el
+elemento activo y enlaces de altura cómoda para el dedo (47 px medidos).
+
+**Portada de inicio.** El rótulo superior pasó a ser «Bienvenida» y la descripción se ajustó
+al alcance real del sistema (lectura con sensor y visualización en un programa, en etapa de
+prototipo). La fotografía de portada dejó de ser una imagen del predio y ahora es la foto del
+equipo (`img/integrantes.jpg`), que antes solo aparecía en `integrantes.html`; el pie enlaza
+a la página de integrantes. Las fotos del predio siguen siendo el material de `evidencias.html`.
+
+**Contacto.** No se agregó «Contacto» al menú principal porque el proyecto no tiene una página
+de contacto: los datos disponibles (teléfono 3104618120) aparecen en la ficha de `index.html`,
+en `integrantes.html` y en el pie de las seis páginas. Si el equipo crea la sección, se agrega
+el enlace al menú.
+
+**Verificado:** las seis páginas mantienen elHTML balanceado, sin ids duplicados y con todas
+las rutas de imágenes y hojas de estaldo existentes; el menú responsive se abrió y cerró
+correctamente en una prueba de navegador a 390 px, 768 px y 1280 px, sin desplazamiento
+horizontal en ningún ancho. **Pendiente del equipo:** reemplazar en `evidencias.html` las fotos
+del predio por imágenes reales del montaje y las pruebas del prototipo.
