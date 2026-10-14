@@ -13,22 +13,31 @@ y qué debe completar el equipo antes de la entrega formal.
 ## 1. Datos que el equipo debe aportar
 
 Durante la auditoría de los archivos **no se encontró ningún documento que identificara el
-tema técnico del proyecto**. El HTML original era una plantilla de Bootstrap con textos de
-relleno, y las imágenes solo permiten afirmar que el trabajo se desarrolló en un predio rural.
+tema técnico del proyecto**, por lo que el equipo suministró los datos
+básicos (nombre del proyecto, programa, equipo y contacto). El HTML original era una plantilla
+de Bootstrap con textos de relleno.
 
 | Dato | Estado | Dónde se refleja en el sitio |
 |---|---|---|
-| Nombre del proyecto | Pendiente | Ficha de `index.html`, encabezado `<title>` de todas las páginas |
-| Programa o técnica | Pendiente | `index.html` (bloque provisional), `conclusiones.html` (apartado 04) |
+| Nombre del proyecto | **Confirmado:** Medidor de temperatura en Aulas de Clases | Ficha de `index.html`, encabezado `<title>` de todas las páginas |
+| Programa o técnica | **Confirmado:** 11.B Media Técnica de Sistemas | Ficha de `index.html`, encabezado y pie de página de las 6 páginas |
+| Contacto del equipo | **Confirmado:** 3104618120 | Ficha de `index.html`, `integrantes.html`, `proyecto.html` y pie de página de las 6 páginas |
 | Docente asesor | Pendiente | `index.html` (bloque provisional), `conclusiones.html` (apartado 04) |
-| Ubicación del predio | Pendiente | `proyecto.html`, sección 02 Contexto |
+| Aulas donde se instaló el medidor | Pendiente | `proyecto.html`, sección 02 Contexto |
 | Planteamiento del problema | Pendiente | `proyecto.html`, sección 03 |
 | Justificación | Pendiente | `proyecto.html`, sección 04 |
 | Objetivo general y objetivos específicos | Pendientes | `proyecto.html`, sección 05 |
+| Componentes exactos del medidor | Pendiente | `proyecto.html`, sección 01 |
 | Etapas del proyecto técnico | Pendiente | `desarrollo.html`, sección 05 |
 | Reparto de responsabilidades del equipo | Pendiente | `integrantes.html`, sección 02 |
 | Conclusiones validadas por la tutoría | Pendiente | `conclusiones.html`, sección 01 |
 | Fechas de las fotografías | No verificable | `evidencias.html`, sección 02 |
+
+Nota sobre las fotografías: las cuatro imágenes disponibles en `img/` corresponden a un
+predio rural (potrero, maquinaria agrícola, animales en pastoreo y campo de juego), no a
+la instalación del medidor en las aulas. Se conservaron porque son las únicas
+disponibles; si el equipo tiene fotos del montaje en el salón de clases, deben reemplazar
+esas cuatro en `evidencias.html` y en la imagen de portada de `index.html`.
 
 ### Cómo se marca el contenido pendiente
 
