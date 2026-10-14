@@ -48,13 +48,13 @@
             <p class="rotulo mb-0">Sección 03</p>
             <h1 class="titulo-portada">Desarrollo</h1>
             <hr class="regla">
-            <p class="entradilla mb-0">Cómo se construyó este sitio, con qué herramientas y qué decisiones técnicas se tomaron durante el proceso.</p>
+            <p class="entradilla mb-0">El estado del prototipo en desarrollo, cómo se está trabajando en él y qué decisiones técnicas se han tomado hasta ahora.</p>
           </div>
           <div class="col-12 col-lg-4">
             <figure class="fotografia">
               <img src="img/doc-01-potrero.jpg" width="1200" height="900" loading="lazy"
                    alt="Extensión de pasto verde rodeada de árboles de gran tamaño en el predio, con un animal a lo lejos.">
-              <figcaption>Potrero del predio, uno de los puntos observados durante el trabajo técnico.</figcaption>
+              <figcaption>Imagen de trabajo del predio disponible en la carpeta del proyecto. No corresponde al montaje del prototipo.</figcaption>
             </figure>
           </div>
         </div>
@@ -66,40 +66,45 @@
         <div class="row g-4 g-lg-5">
           <div class="col-12 col-lg-4">
             <span class="numero-seccion">01</span>
-            <h2 class="titulo-seccion" id="t-proceso">Proceso de trabajo</h2>
+            <h2 class="titulo-seccion" id="t-proceso">Avance del prototipo</h2>
           </div>
           <div class="col-12 col-lg-8">
-            <p class="parrafo-medida">La construcción de este sitio está documentada de principio a fin, porque el proyecto conserva todos los archivos y cada decisión pudo comprobarse sobre ellos. La secuencia real fue la siguiente.</p>
+            <p class="parrafo-medida">Estas son las etapas del desarrollo del prototipo. Las que ya están avanzadas tienen registro; las que continúan abiertas aparecen señaladas como provisionales hasta que el equipo documente su resultado.</p>
             <ol class="linea-tiempo">
               <li>
                 <span class="etapa">Etapa 01</span>
-                <h3>Revisión de los archivos existentes</h3>
-                <p class="mb-0">Se inspeccionó la carpeta del proyecto: una plantilla HTML de Bootstrap con textos de relleno, la distribución completa de Bootstrap 5.3.2 y siete imágenes de distintos orígenes.</p>
+                <h3>Identificación de la necesidad</h3>
+                <p class="mb-0">El equipo partió de la observación de las aulas: no hay forma de saber qué temperatura se alcanza dentro del salón durante la jornada. De ahí salió la idea de un medidor propio del aula.</p>
               </li>
               <li>
                 <span class="etapa">Etapa 02</span>
-                <h3>Clasificación del material visual</h3>
-                <p class="mb-0">Cada imagen se abrió y se revisó antes de decidir su uso. Cuatro resultaron ser documentación del predio; las otras tres resultaron ser material de Internet sin relación con el trabajo.</p>
+                <h3>Definición del funcionamiento</h3>
+                <p class="mb-0">Se estableció qué debe hacer el sistema: leer la temperatura del salón, mostrar el valor y dejar un registro que permita comparar distintos momentos del día. Sobre esto se eligieron los componentes del prototipo.</p>
               </li>
               <li>
                 <span class="etapa">Etapa 03</span>
-                <h3>Preparación de los recursos</h3>
-                <p class="mb-0">Se generaron copias ligeras de las cuatro fotografías de campo, con nombres sin espacios y dimensiones ajustadas para móvil, conservando intactos los archivos originales.</p>
+                <h3>Montaje del circuito</h3>
+                <p class="mb-0">Sensor de temperatura, placa de adquisición de datos y conexiones se ensamblaron sobre una base de pruebas para comprobar el cableado antes de llevarlo a una instalación definitiva.</p>
               </li>
               <li>
                 <span class="etapa">Etapa 04</span>
-                <h3>Definición de la identidad visual</h3>
-                <p class="mb-0">Se establecieron la paleta, la escala tipográfica y el sistema de composición del sitio en un único archivo de estilos propio, por encima de Bootstrap.</p>
+                <h3>Lectura y programación</h3>
+                <p class="mb-0">Se trabajó en el programa que toma el dato del sensor y lo convierte en un valor de temperatura legible para el usuario.</p>
               </li>
               <li>
                 <span class="etapa">Etapa 05</span>
-                <h3>Construcción de las páginas</h3>
-                <p class="mb-0">Se redactaron las seis páginas con el mismo encabezado y el mismo pie, de modo que la navegación y la identidad sean idénticas en todo el sitio.</p>
+                <h3>Pruebas del prototipo</h3>
+                <p class="mb-0">El prototipo se prueba bajo condiciones controladas para verificar que la lectura se mantenga estable y que el valor mostrado corresponda a la temperatura real.</p>
               </li>
               <li>
                 <span class="etapa">Etapa 06</span>
-                <h3>Revisión y pruebas</h3>
-                <p class="mb-0">Se comprobaron rutas, enlaces, textos alternativos, comportamiento en pantallas pequeñas y ausencia de errores en el navegador.</p>
+                <h3>Ajustes y documentación</h3>
+                <p class="mb-0">Cada prueba deja correcciones pendientes en el circuito o en el programa. El registro de esos ajustes es el que alimenta este sitio.</p>
+              </li>
+              <li>
+                <span class="etapa">Etapa 07</span>
+                <h3>Instalación en el aula</h3>
+                <p class="mb-0">Pendiente. El prototipo todavía no está instalado de forma permanente en las aulas; queda por definir en qué salones se colocará y cómo se hará la medición continua.</p>
               </li>
             </ol>
           </div>
@@ -113,17 +118,17 @@
           <div class="col-12 col-lg-4">
             <span class="numero-seccion">02</span>
             <h2 class="titulo-seccion" id="t-herramientas">Herramientas utilizadas</h2>
-            <p class="parrafo-medida">Todas las herramientas están instaladas en el equipo y no requieren conexión a internet.</p>
+            <p class="parrafo-medida">Lo que utiliza el equipo para el desarrollo del prototipo y para este sitio.</p>
           </div>
           <div class="col-12 col-lg-8">
             <dl class="ficha">
-              <div><dt>Estructura</dt><dd>HTML5 con etiquetas semánticas</dd></div>
-              <div><dt>Presentación</dt><dd>CSS3 en un archivo propio del proyecto</dd></div>
-              <div><dt>Componentes</dt><dd>Bootstrap 5.3.2, versión local</dd></div>
-              <div><dt>Interactividad</dt><dd>JavaScript de Bootstrap 5.3.2 para el menú y la galería</dd></div>
+              <div><dt>Medición</dt><dd>Sensor de temperatura</dd></div>
+              <div><dt>Adquisición</dt><dd>Placa de desarrollo para leer el sensor</dd></div>
+              <div><dt>Montaje</dt><dd>Protoboard y cables de conexión</dd></div>
+              <div><dt>Software</dt><dd>Editor de código y entorno del fabricante de la placa</dd></div>
+              <div><dt>Documentación del sitio</dt><dd>HTML5, CSS3 y Bootstrap 5.3.2 en archivo local</dd></div>
               <div><dt>Edición</dt><dd>Visual Studio Code</dd></div>
               <div><dt>Vista previa</dt><dd>Live Server, puerto 5501</dd></div>
-              <div><dt>Imágenes</dt><dd>Redimensionado y compresión de las fotografías de campo</dd></div>
             </dl>
           </div>
         </div>
@@ -139,10 +144,11 @@
           </div>
           <div class="col-12 col-lg-8">
             <ul class="parrafo-medida">
-              <li class="mb-3"><strong>Sitio estático y multipágina.</strong> Seis documentos HTML independientes en lugar de una sola aplicación. Se abre con doble clic, sin servidor ni compilación.</li>
+              <li class="mb-3"><strong>Prototipo con componentes accesibles.</strong> El montaje se hace sobre una base de pruebas, con un sensor y una placa de desarrollo. Esto permite modificar el circuito sin soldar, que es justo lo que se necesita en etapa de prototipo.</li>
               <li class="mb-3"><strong>Una sola versión de Bootstrap.</strong> La carpeta traía la distribución completa, con variantes de lectura de derecha a izquierda, de rejilla, de reinicio y de utilidades. Cargar todas duplicaba los estilos; se usan únicamente la versión completa mínima y su paquete de JavaScript.</li>
               <li class="mb-3"><strong>Estilos propios en un solo archivo.</strong> Bootstrap aporta el sistema de rejilla y los componentes; la identidad visual del sitio vive en un archivo CSS separado, sin estilos repetidos dentro de las páginas.</li>
               <li class="mb-3"><strong>Sin recursos externos.</strong> No hay fuentes remotas, iconos descargados ni servicios de terceros. Todo funciona sin conexión.</li>
+              <li class="mb-3"><strong>Registro por etapas.</strong> Cada prueba del prototipo se anota con lo que falló y lo que se corrigió, para que el avance quede documentado y no dependa de la memoria del equipo.</li>
               <li class="mb-0"><strong>Imágenes sin recortes.</strong> Las fotografías conservan su proporción original y el alto se calcula a partir del ancho, de modo que ninguna aparece deformada ni cortada.</li>
             </ul>
           </div>
@@ -159,6 +165,8 @@
           </div>
           <div class="col-12 col-lg-8">
             <dl class="ficha">
+              <div><dt>Documentación del prototipo</dt><dd>Las etapas del medidor no tienen todavía un registro escrito con fechas y resultados. Este sitio lo señala como pendiente en lugar de describirlo.</dd></div>
+              <div><dt>Imágenes del prototipo</dt><dd>No hay fotografías del montaje ni de las pruebas. Las únicas imágenes disponibles son del predio y no corresponden al sistema.</dd></div>
               <div><dt>Material de relleno</dt><dd>La plantilla inicial usaba textos de ejemplo y enlaces vacíos. Se reescribió todo el contenido y cada enlace apunta a una página real.</dd></div>
               <div><dt>Nombres de archivo</dt><dd>Tres fotografías tenían nombres con espacios y comillas, lo que complicaba las rutas. Se crearon copias con nombres cortos, sin tocar los originales.</dd></div>
               <div><dt>Peso de las imágenes</dt><dd>Una fotografía pesaba casi cinco megabytes. Se excluyó del diseño y el resto se ajustó a un tamaño adecuado para móvil.</dd></div>
@@ -178,10 +186,10 @@
             <h2 class="titulo-seccion" id="t-etapas-proyecto">Etapas del proyecto técnico</h2>
           </div>
           <div class="col-12 col-lg-8">
-            <p class="parrafo-medida">La línea de tiempo anterior documenta la construcción de este sitio, que sí está registrada. Las etapas del proyecto técnico en sí necesitan otra línea de tiempo, construida a partir de las anotaciones del equipo.</p>
+            <p class="parrafo-medida">La línea de tiempo anterior describe las etapas del desarrollo del prototipo. Lo que falta es que el equipo documente cada etapa con sus fechas, sus resultados y las fotografías que la acompañan.</p>
             <div class="provisional">
               <span class="provisional__etiqueta">Texto provisional</span>
-              <p>No se ha incluido una secuencia de etapas del proyecto porque no existe un registro escrito que la respalde. El equipo debe relacionar cada etapa con su fecha aproximada y con la evidencia fotográfica que la acompaña.</p>
+              <p>No se incluye una secuencia de etapas con fechas porque todavía no existe un registro escrito que la respalde. El equipo debe relacionar cada etapa con su fecha aproximada y con la evidencia que la respalde.</p>
             </div>
           </div>
         </div>
@@ -194,7 +202,7 @@
           <div class="col-12 col-lg-7">
             <span class="numero-seccion">06</span>
             <h2 class="titulo-seccion" id="t-estado-dev">Estado actual</h2>
-            <p class="parrafo-medida mb-0">El sitio está terminado y navegable: las seis páginas cargan sin errores, los enlaces internos funcionan, el menú se despliega correctamente en pantallas pequeñas y las imágenes se muestran con su proporción original. Lo que falta es la redacción académica del proyecto, que depende del equipo y de la tutoría.</p>
+            <p class="parrafo-medida mb-0">El prototipo está en desarrollo: el circuito está montado, la lectura del sensor se está probando y el programa que muestra los datos está en ajuste. El sitio de documentación está terminado y navegable, pero lo que falta es el registro escrito de cada prueba y de cada ajuste del prototipo, que depende del equipo y de la tutoría.</p>
           </div>
           <div class="col-12 col-lg-5">
             <p class="parrafo-medida mb-0"><a href="evidencias.html">Ver el registro fotográfico</a> &nbsp;&middot;&nbsp; <a href="conclusiones.html">Ver conclusiones</a></p>

@@ -1,6 +1,7 @@
 # Pendientes y decisiones técnicas del sitio
 
-Proyecto técnico 11.B — Institución Educativa Colombia
+Medidor de temperatura en Aulas de Clases — Prototipo en desarrollo
+Curso 11.B Media Técnica de Sistemas — Institución Educativa Colombia
 Equipo: Jhon Fredy Montalvo Cuadrado, José David Mosquera Rodríguez, Esteban Espinoza Gomez,
 Brandol Stevan Durango Moreno
 
@@ -10,7 +11,15 @@ y qué debe completar el equipo antes de la entrega formal.
 
 ---
 
-## 1. Datos que el equipo debe aportar
+## 1. Estado del proyecto
+
+El proyecto es un **prototipo en desarrollo**, no una instalación terminada. Todo el sitio
+debe hablar en ese tono: lo que existe es un montaje de trabajo y sus pruebas de
+validación, y el medidor todavía no está colocado de forma permanente en las aulas.
+
+---
+
+## 2. Datos que el equipo debe aportar
 
 Durante la auditoría de los archivos **no se encontró ningún documento que identificara el
 tema técnico del proyecto**, por lo que el equipo suministró los datos
@@ -23,21 +32,22 @@ de Bootstrap con textos de relleno.
 | Programa o técnica | **Confirmado:** 11.B Media Técnica de Sistemas | Ficha de `index.html`, encabezado y pie de página de las 6 páginas |
 | Contacto del equipo | **Confirmado:** 3104618120 | Ficha de `index.html`, `integrantes.html`, `proyecto.html` y pie de página de las 6 páginas |
 | Docente asesor | Pendiente | `index.html` (bloque provisional), `conclusiones.html` (apartado 04) |
-| Aulas donde se instaló el medidor | Pendiente | `proyecto.html`, sección 02 Contexto |
+| Aulas donde se colocará el medidor | Pendiente | `proyecto.html`, sección 02 Prototipo en desarrollo |
 | Planteamiento del problema | Pendiente | `proyecto.html`, sección 03 |
 | Justificación | Pendiente | `proyecto.html`, sección 04 |
 | Objetivo general y objetivos específicos | Pendientes | `proyecto.html`, sección 05 |
 | Componentes exactos del medidor | Pendiente | `proyecto.html`, sección 01 |
-| Etapas del proyecto técnico | Pendiente | `desarrollo.html`, sección 05 |
+| Resultados de las pruebas del prototipo | Pendiente | `desarrollo.html`, secciones 01 y 05 |
+| Fechas de cada etapa del desarrollo | Pendiente | `desarrollo.html`, secciones 01 y 05 |
 | Reparto de responsabilidades del equipo | Pendiente | `integrantes.html`, sección 02 |
 | Conclusiones validadas por la tutoría | Pendiente | `conclusiones.html`, sección 01 |
 | Fechas de las fotografías | No verificable | `evidencias.html`, sección 02 |
 
 Nota sobre las fotografías: las cuatro imágenes disponibles en `img/` corresponden a un
-predio rural (potrero, maquinaria agrícola, animales en pastoreo y campo de juego), no a
-la instalación del medidor en las aulas. Se conservaron porque son las únicas
-disponibles; si el equipo tiene fotos del montaje en el salón de clases, deben reemplazar
-esas cuatro en `evidencias.html` y en la imagen de portada de `index.html`.
+predio rural (potrero, maquinaria agrícola, animales en pastoreo y campo de juego) y no
+documentan el prototipo. Se conservaron porque son las únicas disponibles; el equipo debe
+reemplazarlas por fotos del montaje, las conexiones y las pruebas de lectura en
+`evidencias.html` y en las imágenes de portada.
 
 ### Cómo se marca el contenido pendiente
 
@@ -57,7 +67,7 @@ Una vez redactado, se puede eliminar el contenedor completo o quitarle la clase
 
 ---
 
-## 2. `img/logo.png` (recurso pendiente por separado)
+## 3. `img/logo.png` (recurso pendiente por separado)
 
 No existe ningún archivo de escudo institucional en la carpeta del proyecto y **no se creó
 uno ficticio**. Todas las páginas referencian la ruta pedida, `img/logo.png`, en el pie de
@@ -77,7 +87,7 @@ no hay que modificar ninguna página. Basta con usar un PNG cuadrado; el CSS ya 
 
 ---
 
-## 3. Imágenes
+## 4. Imágenes
 
 ### Material usado (fotografías del predio)
 
@@ -110,7 +120,7 @@ reutilizarlos como material de apoyo, pero no se presentan como evidencia.
 
 ---
 
-## 4. Bootstrap
+## 5. Bootstrap
 
 La carpeta traía la distribución completa de **Bootstrap 5.3.2** (CSS completo, variantes de
 derecha a izquierda, de rejilla, de reinicio y de utilidades, más los mapas `.map` y los
@@ -125,7 +135,7 @@ paquetes JavaScript sin comprimir, ESM y con Polyfill).
 
 ---
 
-## 5. Archivo original conservado
+## 6. Archivo original conservado
 
 `layout web.html` se dejó tal como estaba, con sus textos de relleno y sus enlaces vacíos,
 como registro del punto de partida. **No está enlazado desde la navegación** y el sitio no
@@ -133,7 +143,7 @@ lo carga. Puede archivarse o eliminarse sin consecuencias.
 
 ---
 
-## 6. Cómo abrir el sitio
+## 7. Cómo abrir el sitio
 
 Doble clic en `index.html`. No hace falta servidor, instalación ni conexión a internet.
 
